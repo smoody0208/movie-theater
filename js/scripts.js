@@ -37,6 +37,11 @@ $(document).ready(function() {
     event.preventDefault();
     let movieTitle = $("input:radio[name=title]:checked").val();
     let movieTime = $("input:radio[name=time]:checked").val();
-    let userAge = $("input:radio[name=time]:checked").val();
+    let userAge = $("input:radio[name=age]:checked").val();
+    let ticket = new Ticket (movieTitle, movieTime, userAge);
+    ticket.ticketPrice();
+    console.log(ticket);
+    $("#ticketOut").show();
+    $("#price").text(ticket.price);
   })  
 })

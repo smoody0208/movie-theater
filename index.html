@@ -10,67 +10,75 @@
   <title>TITLE</title>
 </head>
 <body>
-<div class="container">
-<h1>Movies</h1>
-<form id="ticketMatrix">
-  <h3>TITLES</h3>
-  <div class="radio">
-    <label>
-      <input type="radio" name="title" id="title1" value="old">
-        The Seven Samurai
-      </label>
+  <div class="jumbotron jumbotron">
+    <div class="container">
+      <h1>Movies</h1>
     </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="title" id="title2" value="new">
-        Bonnie and Clyde
-      </label>
-    </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="title" id="title3" value="new">
-        Reservoir Dogs 
-      </label>
-    </div>
-  <h3>AGE</h3>
-  <div class="radio">
-    <label>
-      <input type="radio" name="age" id="age1" value="child">
-        Child (12 or under)
-      </label>
-    </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="age" id="age2" value="adult">
-        Adult (13-64)
-      </label>
-    </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="age" id="age3" value="senior">
-        Senior (65+)
-      </label>
-    </div>
-    <h3>SHOWTIME</h3>
-    <div class="radio">
-      <label>
-        <input type="radio" name="time" id="time1" value="matinee">
-          12:00 PM
+  </div>  
+  <div class="container">
+    <form id="ticketMatrix">
+      <h3>TITLES</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="title" id="title1" value="old">
+            The Seven Samurai
         </label>
       </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="time" id="time2" value="evening">
-          06:00 PM
+      <div class="radio">
+        <label>
+          <input type="radio" name="title" id="title2" value="new">
+            Bonnie and Clyde
+          </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="title" id="title3" value="new">
+            Reservoir Dogs 
+          </label>
+        </div>
+      <h3>AGE</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" id="age1" value="child">
+            Child (12 or under)
+          </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" id="age2" value="adult">
+            Adult (13-64)
+          </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" id="age3" value="senior">
+            Senior (65+)
         </label>
       </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="time" id="time3" value="late">
-          12:00 AM
+      <h3>SHOWTIME</h3>
+      <div class="radio">
+        <label>
+          <input type="radio" name="time" id="time1" value="matinee">
+            12:00 PM
         </label>
       </div>
-    <input type="submit" class="btn btn-warning" valeu="GET TIX">
+      <div class="radio">
+        <label>
+          <input type="radio" name="time" id="time2" value="evening">
+            06:00 PM
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="time" id="time3" value="late">
+            12:00 AM
+        </label>
+      </div>
+        <input type="submit" class="btn btn-warning" value="GET TIX">
+      </form>
+    <div id="ticketOut">
+      Your ticket cost will be:
+      <h3><span id="price"></span></h3>
     </div>
-  </form>
+  </div>
 </body>
